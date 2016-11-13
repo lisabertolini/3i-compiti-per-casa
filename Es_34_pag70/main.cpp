@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int float n;
+    float n;
     int m>=0;
     int i, pot;
     cout << "programma che premette di calcolare la potenza n alla m " << endl;
