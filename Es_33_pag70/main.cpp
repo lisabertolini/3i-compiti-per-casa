@@ -11,9 +11,9 @@ int main()
     cout<<"inserire l'esponente=y"<<endl;
     cin>>y;
 
-    if(m==0)
+    if(y==0)
        cout<<"il risultato di una potenza che ha come esponente 0 e' 1"<<endl;
-    if(m==1)
+    if(y==1)
         cout<<"il risultato di una potenza che ha come esponente 1 e'"<<x<<endl;
         else
         {
