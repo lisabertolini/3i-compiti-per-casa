@@ -2,20 +2,20 @@
 using namespace std;
 int invertire(int,int);
 int main(){
-int numero;
-int inverso=0;
-cout<<"inserire un numero intero"<<endl;
-cin>>numero;
-cout<<"il numero inverso e'"<<invertire(numero,inverso)<<endl;
+int a;
+int b=0;
+cout<<"inserisci un numero intero"<<endl;
+cin>>a;
+cout<<"il numero inverso e'"<<invertire(a,b)<<endl;
 }
 
-int invertire(int numero,int inverso)
+int invertire(int x,int y)
 {
-   if(numero==0) return inverso;
+   if(x==0) return y;
    else
    {
-       inverso=inverso*10+numero%10;
-       return invertire(numero/10,inverso);
+       y=y*10+x%10;
+       return invertire(x/10,y);
 
 }
 }
