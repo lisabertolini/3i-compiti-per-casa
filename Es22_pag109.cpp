@@ -12,11 +12,6 @@ cout<<"il numero inverso e'"<<invertire(a,b)<<endl;
 int invertire(int x,int y)
 {
    if(x==0) return y;
-   else
-   {
-       y=y*10+x%10;
-       return invertire(x/10,y);
-
-}
+   else{y=y*10+x%10; return invertire(x/10,y);}
 }
 
