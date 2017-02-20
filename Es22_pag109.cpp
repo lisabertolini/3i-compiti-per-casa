@@ -4,7 +4,7 @@ int invertire(int,int);
 int main(){
 int numero;
 int inverso=0;
-cout<<"inserisci un numero intero"<<endl;
+cout<<"inserire un numero intero"<<endl;
 cin>>numero;
 cout<<"il numero inverso e'"<<invertire(numero,inverso)<<endl;
 }
