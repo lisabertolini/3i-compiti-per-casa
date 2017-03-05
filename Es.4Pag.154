@@ -1,0 +1,61 @@
+#include <iostream>
+
+using namespace std;
+
+void Caricamento(int[],int);
+void Inverso(int[],int);
+int OttieniDimensione(void);
+int Operazioni(int[],int,int,int);
+int main()
+{
+    int V[10];// dichiarazione del vettore//
+    int NumElementi;
+    int ProdottoPari;
+    int SommaDispari;
+    NumElementi=OttieniDimensione();
+    Caricamento(V,NumElementi);
+    Inverso(V,NumElementi);
+    Operazioni(V,NumElementi,ProdottoPari,SommaDispari);
+    cout<<"il prodotto dei numeri pari è: "<<pp<<endl;
+    cout<<"la somma dei numeri dispari è: "<<sd<<endl;
+    system("PAUSE");
+    return 0;
+}
+OttieniDimensione()
+{
+    int Dim;
+    do
+    {
+    cout << "inserisci un numero di elementi con (Dim<=10)" << endl;
+    cin>>Dim;
+    }
+    while(Dim<0||Dim>10);
+    return Dim;
+}
+
+void Caricamento(int Vet[], int N)
+{
+   for(int i=0;i<N;i++)
+   {
+       cout<<"inserisci il"<<i+1<<"elemento"<<endl;
+       cin>>Vet[i];
+   }
+}
+   void Inverso(int Vet[], int N)
+{
+   for(int i=N;i>0;i--)
+   {
+       cout<<"inserisci il"<<i-1<<"elemento"<<endl;
+       cin>>Vet[i];
+   }
+}
+    Operazioni(Vet[],N,pp,sd)
+{
+    for(int i=1;i<N;i++)
+    {
+        if(i%2==0) pp*=Vet[i];
+        else sd+=Vet[i]; 
+    }          
+}
+    
+        
