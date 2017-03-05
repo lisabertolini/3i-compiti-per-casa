@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+void Caricamento(int[],int);
+void Inverso(int[],int);
+int OttieniDimensione(void);
+int main()
+{
+    int V[10];// dichiarazione del vettore//
+    int NumElementi;
+    NumElementi=OttieniDimensione();
+    Caricamento(V,NumElementi);
+    Inverso(V;NumElementi);
+    system("PAUSE");
+    return 0;
+}
+OttieniDimensione()
+{
+    int Dim;
+    do
+    {
+    cout << "inserisci un numero di elementi con (Dim<=10)" << endl;
+    cin>>Dim;
+    }
+    while(Dim<0||Dim>10);
+    return Dim;
+}
+
+void Caricamento(int Vet[], int N)
+{
+   for(int i=0;i<N;i++)
+   {
+       cout<<"inserisci il"<<i+1<<"elemento"<<endl;
+       cin>>Vet[i];
+   }
+   
+   void Inverso(int Vet[], int N)
+{
+   for(int i=N;i>0;i--)
+   {
+       cout<<"inserisci il"<<i-1<<"elemento"<<endl;
+       cin>>Vet[i];
+   }
+}
