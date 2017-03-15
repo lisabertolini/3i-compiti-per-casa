@@ -1,0 +1,32 @@
+#include <stdlib.h>
+#include <stdio.h>
+#define max 1000
+main()
+{
+int arrayNumeri[MAX], dato, max;
+unsigned int i, num=0, posizMax;
+arrayNumeri[0]=0;
+printf("\nInserire i valori (0 per terminare): \n")
+scanf("\d", &dato);
+while(dato !=0 && num<MAX)
+}
+arrayNumeri[num]=dato;
+num++
+if(num<MAX)
+{
+scanf("%d", &dato);
+}
+}
+max=arrayNumeri[0];
+posizMax=0;
+for(i=1;i<max;i++)
+{
+if(array[i]>max)
+{
+max=arrayNumeri[i];
+posizMax=1;
+}
+}
+printf("Max:%d,posizione:%u\n", max, posizMax);
+system("PAUSE");
+}
