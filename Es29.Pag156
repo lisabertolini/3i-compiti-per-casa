@@ -1,0 +1,31 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+// contiamo solo le lettere (alfabeto inglese)
+// distinguiamo maiuscole e minuscole
+int main(){
+    char input[MAX];
+    cout<<"inserisci una stringa: "<<endl;
+    gets(input);
+    char prima_lettera= input[0];
+    int dim=strlen(input);
+	for (int i = 0;input[i] != '\0'; i++){
+        int contatore = 0;
+        for(int j = i+1; input[j] != '\0' ; j++){
+            if (input[j] == input[i]){
+                
+                if(i>0 && input[j] != prima_lettera){
+                    contatore++;
+                    input[j]=prima_lettera;
+                }
+                else{
+                    contatore++;
+                }
+            }
+                
+        }
+        cout << "Ci sono " << contatore << " occorrenze di " << input[i] << endl;
+	}
+    return 0;
+}
