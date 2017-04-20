@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+    {
+        int a[] = {0,4,6,88,9,0,5,34,5,7,7,5,34,2,-15};
+        int b[] = {3,4,5,7,8,5,-12,-22,6,7,8,9,0,0,2};
+        int dim = 15;
+        int prodotto_scalare = 0;
+        for(int i=0,i<dim;i++)
+        {
+            prodotto_scalare+=a[i]*b[i];
+        }
+    }
+    cout << "Hello world!" << endl;
+    return 0;
